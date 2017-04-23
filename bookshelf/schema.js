@@ -2,7 +2,7 @@ const Schema = {
   users: {
     id: { type: 'increments', nullable: false, primary: true },
     name: { type: 'string', maxlength: 150, nullable: false },
-    about: { type: 'string', maxlength: 500 }
+    about: { type: 'string', maxlength: 500, nullable: true }
   },
   user_friends: {
     user_id_a: { type: 'integer', nullable: false, unsigned: true },
