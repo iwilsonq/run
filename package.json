@@ -1,0 +1,23 @@
+{
+  "name": "run",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ian Wilson <iwilsonq@gmail.com> (http://www.thestoicdeveloper.com/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js",
+    "migrate": "node -e 'require(\"babel-register\"); require(\"./data/migrate\")'"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "bookshelf": "^0.10.3",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "graphql": "^0.9.3",
+    "knex": "^0.12.9",
+    "lodash": "^4.17.4",
+    "mysql": "^2.13.0",
+    "when": "^3.7.8"
+  }
+}
